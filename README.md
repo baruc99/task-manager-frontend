@@ -22,8 +22,8 @@ Este es el frontend de una aplicación de gestión de tareas, desarrollado con *
 1. Clona el repositorio:
 
     ```bash
-    git clone <url-del-repositorio>
-    cd <directorio-del-proyecto>
+    git clone <https://github.com/baruc99/task-manager-frontend>
+    cd <task-manager-frontend>
     ```
 
 2. Instala las dependencias:
