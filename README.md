@@ -1,47 +1,60 @@
-# Getting Started with Create React App
+# Proyecto de Gestión de Tareas (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es el frontend de una aplicación de gestión de tareas, desarrollado con **React**, **TypeScript**, y **TailwindCSS**. La aplicación permite a los usuarios gestionar sus tareas, ver su lista de tareas, crear nuevas tareas, editar o eliminar tareas, y asignar prioridades automáticamente a las tareas según su fecha de vencimiento y estado.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- **Autenticación**: El sistema permite a los usuarios registrarse, iniciar sesión y cerrar sesión.
+- **CRUD de tareas**: Los usuarios pueden crear, leer, actualizar y eliminar tareas.
+- **Prioridad automática**: Las tareas se asignan automáticamente a una prioridad (alta, media, baja) según su fecha de vencimiento y estado.
+- **Interfaz responsiva**: La interfaz se adapta a diferentes tamaños de pantalla.
 
-### `npm start`
+## Tecnologías usadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React**: Librería principal para la construcción de la interfaz de usuario.
+- **TypeScript**: Lenguaje basado en JavaScript con tipado estático.
+- **TailwindCSS**: Framework de diseño de CSS para crear interfaces modernas y rápidas.
+- **SweetAlert2**: Para mostrar alertas emergentes de confirmación y éxito.
+- **Axios**: Para hacer peticiones HTTP a la API.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instalación
 
-### `npm test`
+1. Clona el repositorio:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone <url-del-repositorio>
+    cd <directorio-del-proyecto>
+    ```
 
-### `npm run build`
+2. Instala las dependencias:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Inicia el servidor de desarrollo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm start
+    ```
 
-### `npm run eject`
+4. La aplicación estará disponible en `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Endpoints
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+La aplicación se conecta con el backend a través de los siguientes endpoints:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **POST /login**: Inicia sesión y recibe un token de autenticación.
+- **POST /register**: Registra un nuevo usuario.
+- **GET /tasks**: Obtiene todas las tareas del usuario.
+- **POST /tasks**: Crea una nueva tarea.
+- **PUT /tasks/{id}**: Actualiza una tarea.
+- **DELETE /tasks/{id}**: Elimina una tarea.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contribuciones
 
-## Learn More
+Si deseas contribuir al proyecto, por favor abre un issue o un pull request con tus cambios.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licencia
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# task-manager-frontend
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
